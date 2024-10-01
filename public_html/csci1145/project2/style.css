@@ -11,11 +11,27 @@ body {
 }
 nav{
     background: blue;
-    padding: 1%;
-    height: 10%;
+    align-items: center;
+    width: 100%;
+    min-height: 10%;
 }
 nav span{
-    display: inline-block;
+    display: flex;
+    float: right;
+    justify-content: center;
+    width: 30%;
+    margin-right: 10%;
+    marign-bottom: 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    background: darkcyan;
+    color: white;
+    width: 100%;
+    margin: 0 2% 0 2%;
+    text-align: center;
+    padding: 2% 2% 1% 2%;
 }
 nav img{
     float: left;
