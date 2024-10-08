@@ -5,49 +5,80 @@ html, body{
 }
 body {
     display: block;
+    background-color: #252629;
 }
 nav{
-    background: blue;
+    background: #0439d9;
     align-items: center;
     width: 100vw;
     height: 10vh;
+    min-height: 60px;
     display: flex;
-    justify-content: center;
     position: fixed;
     margin: 0;
     top: 0;
     overflow: visible;
 }
-nav span{
-    justify-content: center;
-    width: 100%;
-    margin: 2%;
-    align-items: center;
-    display: flex;
+@media (min-width: 850px) {
+    nav span {
+        width: 100%;
+        margin: 2%;
+        display: flex;
+    }
+    nav img {
+        width: max(150px, 25vh);
+        height: max(150px, 25vh);
+    }
+}
+@media (max-width: 850px) {
+    nav span {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        height: 100%;
+        width: 100%;
+    }
+    nav img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+nav img{
+    position: relative;
+    margin-top: max(60px, 10vh);
 }
 nav a{
     text-decoration: none;
     font-size: 1em;
-    background: darkcyan;
+    background: #1c1b7b;
     color: white;
-    padding: 2%;
+    padding: 1.5% 4%;
     border-radius: 10px;
     text-wrap: nowrap;
     display: block;
-    width: 20%;
-    height: 10px;
+    width: max-content;
+    height: max-content;
     margin: 5px;
     text-align: center;
 }
-nav img{
-    margin-top: -1%;
-    width: 25vh;
-    height: 25vh;
-    padding-top: 12%;
+@media (max-height: 690px) {
+    nav a{
+        padding: 10px 4%;
+    }
 }
-.centerContent{
+.container{
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background: #b3d4fc;
+    /*temp color*/
+    /*add to navspan*/
+
 }
-div.centerContent{
-    margin: 8%;
+.mainContent{
+    margin: max(105px, 8%) 8% auto 8%;
+}
+.transition, .transition a{
+    transition: ease-out 500ms
 }
