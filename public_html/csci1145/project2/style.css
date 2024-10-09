@@ -26,6 +26,7 @@ nav{
         display: flex;
     }
     nav img {
+        margin-top: max(60px, 10vh);
         width: max(150px, 25vh);
         height: max(150px, 25vh);
     }
@@ -35,43 +36,37 @@ nav{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
+        grid-gap: 0;
         height: 100%;
         width: 100%;
     }
     nav img {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
     }
 }
 
 nav img{
     position: relative;
-    margin-top: max(60px, 10vh);
 }
 nav a{
     text-decoration: none;
     font-size: 1em;
     background: #1c1b7b;
     color: white;
-    padding: 1.5% 4%;
+    padding: max(5px,1.5%) 4%;
     border-radius: 10px;
     text-wrap: nowrap;
     display: block;
     width: max-content;
     height: max-content;
-    margin: 5px;
+    margin: min(5px, 1%);
     text-align: center;
-}
-@media (max-height: 690px) {
-    nav a{
-        padding: 10px 4%;
-    }
 }
 .container{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #b3d4fc;
     /*temp color*/
     /*add to navspan*/
 
@@ -81,4 +76,13 @@ nav a{
 }
 .transition, .transition a{
     transition: ease-out 500ms
+}
+.contentBox{
+    background: #8c8c8c;
+    border: 5px solid #404040;
+    width: 40%;
+    height: fit-content;
+    margin: 0 auto 0 auto;
+    padding: 5%;
+    text-wrap: balance;
 }
