@@ -1,0 +1,26 @@
+body{
+    background: gray;
+
+}
+form {
+    margin-inline: auto;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border: white solid 1px;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#wrapper {
+    width: 80%;
+    margin-inline: auto;
+}
+label{
+    font-weight: bold;
+}
+.block {
+    display: block;
+}
