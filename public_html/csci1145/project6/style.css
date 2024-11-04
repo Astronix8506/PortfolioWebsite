@@ -13,8 +13,7 @@ nav{
     background: #1b1c1f;
     align-items: center;
     width: 100vw;
-    height: 10vh;
-    min-height: 60px;
+    height: 90px;
     display: flex;
     position: fixed;
     margin: 0;
@@ -28,9 +27,9 @@ nav{
         display: flex;
     }
     nav img {
-        margin-top: max(60px, 10vh);
-        width: max(150px, 25vh);
-        height: max(150px, 25vh);
+        margin-top: 60px;
+        width: 200px;
+        height: 200px;
     }
 }
 @media (max-width: 850px) {
@@ -137,4 +136,18 @@ nav a{
     width: 80px;
     height: 80px;
     border-radius: 10px;
+}
+.block{
+    display: block;
+}
+@media screen and (max-width: 650px) {
+    .pageHeader{
+        font-size:  50px;
+    }
+    .contentBox{
+        width: 80%;
+    }
+    .skillsetGrid{
+        display: block;
+    }
 }

@@ -138,3 +138,6 @@ nav a{
     height: 80px;
     border-radius: 10px;
 }
+.block{
+    display: block;
+}
