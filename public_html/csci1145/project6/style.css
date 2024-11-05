@@ -20,37 +20,7 @@ nav{
     top: 0;
     overflow: visible;
 }
-@media (min-width: 850px) {
-    nav span {
-        width: 100%;
-        margin: 2%;
-        display: flex;
-    }
-    nav img {
-        margin-top: 60px;
-        width: 200px;
-        height: 200px;
-    }
-}
-@media (max-width: 850px) {
-    nav span {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-gap: 0;
-        height: 100%;
-        width: 100%;
-    }
-    nav img {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-nav img{
-    position: relative;
-}
-nav a{
+.dropDown{
     text-decoration: none;
     font-size: 100%;
     font-weight: 1000;
@@ -59,9 +29,41 @@ nav a{
     padding: max(5px,1.5%) 4%;
     border-radius: 10px;
     text-wrap: nowrap;
-    display: block;
+    display: none;
     width: max-content;
     height: max-content;
+    margin: min(5px, 1%);
+    text-align: center;
+}
+nav img{
+    position: relative;
+    margin-top: 100px;
+}
+.linkable:hover{
+    background: #2f2da0;
+}
+.dropDownMenu{
+    display: none;
+}
+nav span {
+    width: 100%;
+    display: flex;
+}
+.navLinks{
+    width: 100%;
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 1000;
+    background: #1c1b7b;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-wrap: nowrap;
     margin: min(5px, 1%);
     text-align: center;
 }
@@ -144,10 +146,71 @@ nav a{
     .pageHeader{
         font-size:  50px;
     }
+    .skillsetGrid{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     .contentBox{
         width: 80%;
     }
-    .skillsetGrid{
+    nav img {
+        width: 78px;
+        height: 78px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    nav span {
+        display: inline;
+    }
+    .dropDownMenu {
         display: block;
+        position: relative;
+    }
+    .dropDown {
+        display: block;
+        font-size: 100%;
+        font-weight: 1000;
+        background: #1c1b7b;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        padding: 20px 60px;
+        border-radius: 10px;
+        text-wrap: nowrap;
+        margin: 10px;
+        text-align: center;
+        float: right;
+        border: none;
+    }
+    .dropDown:hover .dropDownContent {
+        display: flex;
+    }
+    .dropDownContent {
+        position: absolute;
+        top: 100%;
+        right: 10px;
+        display: none;
+        flex-direction: column;
+        background: #1c1b7b;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 1;
+    }
+    .navLinks {
+        display: none;
+    }
+    .dropDownMenu a{
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        box-sizing: border-box;
     }
 }
