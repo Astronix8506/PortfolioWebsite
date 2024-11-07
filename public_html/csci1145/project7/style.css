@@ -173,9 +173,9 @@ nav a{
         font-weight: 1000;
         background: #1c1b7b;
         color: white;
-        width: fit-content;
+        width: 187.517px;
         height: fit-content;
-        padding: 20px 60px;
+        padding: 20px 20px;
         border-radius: 10px;
         text-wrap: nowrap;
         margin: 10px;
@@ -183,12 +183,14 @@ nav a{
         float: right;
         border: none;
     }
+    /*
     .dropDown:hover .dropDownContent {
         display: flex;
     }
+
+    */
     .dropDownContent {
         position: absolute;
-        top: 100%;
         right: 10px;
         display: none;
         flex-direction: column;
