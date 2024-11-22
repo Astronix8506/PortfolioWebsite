@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+</head>
+<body>
+<nav>
+    <img class="transition" src="images/BigTetroGamesLogo.png" alt="Tetro Games Logo">
+    <span class="transition">
+        <div class="navLinks">
+            <a class="linkable" href="home.html">Home</a>
+            <a class="linkable" href="aboutMe.html">About Me</a>
+            <a class="linkable" href="skillsets.html">Skillsets</a>
+            <a class="linkable" href="projects.html">Projects</a>
+            <a class="linkable" href="futureProjects.html">Future Projects</a>
+        </div>
+        <span class="dropDownMenu">
+            <button class="dropDown" onclick="toggleDropdown()">
+                <span>Menu</span>
+
+                <div class="dropDownContent">
+                    <a class="linkable" href="home.html">Home</a>
+                    <a class="linkable" href="aboutMe.html">About Me</a>
+                    <a class="linkable" href="skillsets.html">Skillsets</a>
+                    <a class="linkable" href="projects.html">Projects</a>
+                    <a class="linkable" href="futureProjects.html">Future Projects</a>
+                </div>
+            </button>
+        </span>
+    </span>
+</nav>
+<div class="container mainContent">
+    <h1 class="pageHeader centertext">About Me</h1>
+    <div class="contentBox container">
+        <img class="profile" src="images/profile.png" alt="Profile of the author">
+        <p class="ptext">
+            Hi, I’m Diego, and am currently enrolled at <a href="https://www.cscc.edu/">Columbus State Community College</a> for Computer Science - Software Development
+            and was previously enrolled at the <a href="https://www.delawareareacc.org/">Deleware Area Career Center</a> for Application Development.  I’ve worked with languages
+            such as <a href="skillsets.html">C#, HTML, CSS, and more</a>; Mostly using C# in Unity for some of my projects like <a href="projects.html#cardCrypt">Card Crypt</a> and
+            <a href="projects.html#spreadYourWings">Spread Your Wings</a>.
+        </p>
+    </div>
+    <h1 class="centertext">Contact Me</h1>
+    <form class="contentBox">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName"/>
+            </p>
+
+            <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName"/>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </p>
+            <p>
+                <label class="block" for="text">Feedback</label>
+                <textarea id="text" cols="33" rows="5"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
